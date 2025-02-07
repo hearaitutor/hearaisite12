@@ -1,0 +1,113 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+}
+
+.motivational-banner {
+    text-align: center;
+    background-color: #936dba;
+    color: #fff;
+    padding: 20px;
+    margin: 40px 0 20px; 
+    border-radius: 10px;
+    width: 90%;
+    max-width: 1200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.motivational-banner h1 {
+    margin: 0;
+    font-size: 28px;
+}
+
+.motivational-banner p {
+    margin: 10px 0 0;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.subscription-container {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 20px;
+    justify-content: center; 
+    width: 90%;
+    max-width: 1200px;
+}
+
+.plan {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.plan:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.plan-header {
+    padding: 20px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.plan-header h2 {
+    margin: 0;
+    color: #333;
+}
+
+.plan-header .price {
+    font-size: 24px;
+    color: #936dba;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.features {
+    list-style: none;
+    padding: 20px;
+    margin: 0;
+    color: #666;
+}
+
+.features li {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.btn-select {
+    background-color: #936dba;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.btn-select:hover {
+    background-color: #936dba;
+}
+
+.plan-header.free {
+    background-color: #f9f9f9;
+}
+
+.plan-header.monthly {
+    background-color: #f5f0f9;
+}
+
+.plan-header.annual {
+    background-color: #efe9f4;
+}

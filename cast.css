@@ -1,0 +1,135 @@
+/* Общие стили */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f3f3f3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Экраны */
+.screen {
+    width: 320px;
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+/* Заголовок */
+.header {
+    background-color: #936dba;
+    color: white;
+    padding: 15px;
+    position: relative;
+}
+
+.title {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.subtitle {
+    font-size: 12px;
+    margin-top: 5px;
+    opacity: 0.8;
+}
+
+/* Контент */
+.content {
+    padding: 15px;
+}
+
+/* Темы */
+.topic {
+    background: white;
+    padding: 12px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    text-align: left;
+    transition: background 0.3s;
+}
+
+.topic:hover {
+    background: #f0f0f0;
+}
+
+.topic h3 {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.topic p {
+    font-size: 13px;
+    color: #666;
+}
+
+/* Скрытый экран */
+.hidden {
+    display: none;
+}
+
+/* Экран голосового ввода */
+#voice-screen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 480px;
+}
+
+/* Кнопка назад */
+.back-button {
+    position: absolute;
+    left: 15px;
+    top: 15px;
+    font-size: 20px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+/* Выбранная тема */
+.selected-topic {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+/* Анимация голосового ввода */
+.voice-animation {
+    width: 150px;
+    height: 150px;
+    background: radial-gradient(circle, rgba(145, 99, 203, 0.6) 0%, rgba(255, 255, 255, 0) 70%);
+    border-radius: 50%;
+    animation: pulse 1.5s infinite alternate;
+    margin: 50px 0;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); opacity: 0.7; }
+    100% { transform: scale(1.2); opacity: 1; }
+}
+
+/* Кнопка микрофона */
+.mic-button {
+    background-color: #936dba;
+    color: white;
+    font-size: 24px;
+    padding: 15px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}

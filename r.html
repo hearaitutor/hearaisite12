@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grāmatu Teksti</title>
+    <link rel="stylesheet" href="../ea2/rst.css">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body> 
+<div id="app">
+    <div id="home-screen" class="screen active">
+        <header>
+            <h1>Grāmatu Teksti</h1>
+            <p>Izvēlieties tekstu, lai uzlabotu savu gramatiku un paplašinātu vārdu krājumu!</p>
+            <p>Noklikšķiniet uz iezīmētajiem vārdiem, lai uzzinātu to nozīmi</p>
+        </header>
+        <div class="text-options">
+            <div class="text-card" onclick="loadText('tom-sawyer')">
+            <img src="../ea2/img/TomSawyer.jpg" alt="Tom Sawyer">
+            <div class="text-card-info">
+                <h2>"The Adventures of Tom Sawyer" by Mark Twain</h2>
+                <p>Stāsts, kas smaržo pēc saules, upes un brīvības.</p>
+            </div>
+            </div>    
+            <div class="text-card" onclick="loadText('charlotte-web')">
+                <img src="../ea2/img/CharWeb.gif" alt="Charlotte's Web">
+                <div class="text-card-info">
+                    <h2>"Charlotte's Web" by E.B. White</h2>
+                    <p>Spilgts stāsts par to, kā mazais zirneklītis iepin draudzības un pestīšanas tīklu, atgādinot, ka laipnība maina likteņus.</p>
+                </div>
+            </div>
+            <div class="text-card" onclick="loadText('fox')">
+            <img src="../ea2/img/fox0.jpg" alt="Fantastic Mr. Fox">
+                <div class="text-card-info">
+                    <h2>"Fantastic Mr. Fox" by Roald Dahl</h2>
+                    <p>Jocīgs kā bērna palaidnība, šis stāsts par viltīgo lapsu māca atrast izeju pat tur, kur tās, šķiet, nav.</p>
+                </div>
+            </div>
+            <div class="text-card" onclick="loadText('hachiko')">
+                <img src="../ea2/img/haciko.jpg" alt="Hachiko">
+                <div class="text-card-info">
+                    <h2>"Hachiko: The True Story of a Loyal Dog"</h2>
+                    <p>Aizkustinošs stāsts par lojalitāti, kas ir mūžīga, kā riešana lietū, kas silda sirdi.</p>
+                </div>
+            </div>
+
+            <div class="text-card" onclick="loadText('tlp')">
+                <img src="../ea2/img/tlp.jpg" alt="The Little Prince">
+                <div class="text-card-info">
+                    <h2>"The Little Prince" by Antoine de Saint-Exupéry</h2>
+                    <p>Neliela grāmatiņa par lielām patiesībām, atgādinot, ka galvenais ir acīm neredzams, bet zvaigznes spīd visiem.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <!-- Второй экран -->
+        <div id="text-screen" class="screen">
+            <header>
+
+            </header>
+            <div id="reading-area">
+                <div id="image-container">
+                    <img id="text-image" src="" alt="Text Illustration">
+                </div>
+                <div id="text-content">
+                    <!-- Динамическое наполнение текста -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+    <div id="bottom-panel" class="hidden">
+        <button onclick="openReading()">
+            <i class="fas fa-eye"></i>
+        </button>
+        <button onclick="openReadAloud()">
+            <i class="fas fa-volume-up"></i>
+        </button>
+        <button onclick="openMenu()">
+            <i class="fas fa-list"></i>
+        </button>
+        <button onclick="openChatAI()">
+            <i class="fas fa-robot"></i>
+        </button>
+        <button onclick="openSubscription()">
+            <i class="fas fa-gem"></i>
+        </button>
+    </div> 
+
+<script src="../ea2/rsc.js"></script>
+</body>
+</html>

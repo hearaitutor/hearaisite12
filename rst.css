@@ -1,0 +1,147 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f7f5fa;
+}
+
+#app {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+/* Заголовок и описание */
+header {
+    padding: 20px;
+    background-color: #9d76c0;
+    color: white;
+    text-align: center;
+    border-radius: 15px 15px 0 0;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+header p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+/* Карточка выбора книги */
+.text-options {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+}
+
+.text-card {
+    display: flex;
+    gap: 15px;
+    cursor: pointer;
+    align-items: center;
+    padding: 15px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    transition: transform 0.2s, box-shadow 0.2s;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.text-card:hover {
+    transform: scale(1.02);
+    border-color: #9d76c0;
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+.text-card img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.text-card-info {
+    flex: 1;
+}
+
+.text-card-info h2 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+}
+
+.text-card-info p {
+    margin: 5px 0 0;
+    font-size: 14px;
+    color: #777;
+}
+
+/* Экран чтения книги */
+#reading-area {
+    display: flex;
+    gap: 15px;
+    padding: 20px;
+}
+
+#image-container {
+    flex: 0 0 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#image-container img {
+    width: 100%;
+    max-width: 200px;
+    border-radius: 10px;
+}
+
+#text-content {
+    flex: 1;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Выделенные слова */
+.highlight {
+    color: #9d76c0;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+}
+
+.highlight::after {
+    content: attr(data-explanation);
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #333;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 12px;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0.2s, opacity 0.2s;
+    white-space: nowrap;
+    z-index: 10;
+}
+
+.highlight:hover::after {
+    visibility: visible;
+    opacity: 1;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+

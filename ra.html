@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reading Practice</title>
+    <link rel="stylesheet" href="../ea2/rast.css">
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <div id="app">
+        <header>
+            <h1>Reading Practice</h1>
+            <p>Izvēlieties tekstu, lai uzlabotu izrunu un lasīšanas ritmu!</p>
+            <p>Ielasi tekstu mikrofonā un aplikācija pierakstīs vārdus, ar kuru izrunu ir vērts strādāt.</p>
+        </header>
+        <div class="text-options">
+            <div class="text-card" data-text-id="1">
+                <h2>My Daily Routine</h2>
+                <p>Learn about daily routines and practice your English reading skills.</p>
+            </div>
+            <div class="text-card" data-text-id="2">
+                <h2>A Trip to the Zoo</h2>
+                <p>Explore an adventurous day at the zoo while practicing your reading.</p>
+            </div>
+            <div class="text-card" data-text-id="3">
+                <h2>My Best Friend</h2>
+                <p>Talk about friendship and strengthen your pronunciation.</p>
+            </div>
+        </div>
+
+        <div class="screen" id="reading-screen">
+            <div id="reading-area">
+                <div id="text-content"></div>
+                <button id="microphone-button">🎤 Start Reading</button>
+            </div>
+        </div>
+
+        <div class="screen" id="analysis-screen">
+            <div id="analysis-results"></div>
+        </div>
+    </div>
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+    <div id="bottom-panel" class="hidden">
+        <button onclick="openReading()">
+            <i class="fas fa-eye"></i>
+        </button>
+        <button onclick="openReadAloud()">
+            <i class="fas fa-volume-up"></i>
+        </button>
+        <button onclick="openMenu()">
+            <i class="fas fa-list"></i>
+        </button>
+        <button onclick="openChatAI()">
+            <i class="fas fa-robot"></i>
+        </button>
+        <button onclick="openSubscription()">
+            <i class="fas fa-gem"></i>
+        </button>
+    </div> 
+    <script src="../ea2/rast.js"></script>
+</body>
+</html>
