@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reģistrācija un valodas izvēle - HearAI</title>
+    <link rel="stylesheet" href="../hearai-app/css/styles.css">
+    <link rel="stylesheet" href="../hearai-app/css/lansel.css">
+</head>
+<body>
+    <!-- Прогресс-бар -->
+    <div class="progress-bar">
+        <div class="progress"></div>
+    </div>
+
+    <!-- Контейнер для регистрации -->
+    <div class="registration-container" id="registration-container">
+        <h1>Reģistrācija</h1>
+        <form id="registration-form">
+            <label for="username">Lietotājvārds:</label>
+            <input type="text" id="username" name="username" required>
+        
+            <label for="password">Parole:</label>
+            <input type="password" id="password" name="password" required>
+        
+            <button type="submit">Reģistrēties</button>
+        </form>        
+    </div>
+
+    <!-- Контейнер для выбора языка -->
+    <div class="container" id="language-selection" style="display: none;">
+        <h2>Izvēlieties valodu, kuru vēlaties apgūt</h2>
+
+        <div class="options">
+            <div class="option" data-value="english">
+                <img src="../hearai-app/html/ea2/img/uk-flag.png" alt="English">
+                <span>angļu valoda</span>
+                <input type="radio" name="language" value="english">
+            </div>
+            <div class="option" data-value="spanish">
+                <img src="../hearai-app/html/ea2/img/spain-flag.png" alt="Spanish">
+                <span>spāņu valoda</span>
+                <input type="radio" name="language" value="spanish">
+            </div>
+            <div class="option" data-value="german">
+                <img src="../hearai-app/html/ea2/img/germany-flag.png" alt="German">
+                <span>vācu valoda</span>
+                <input type="radio" name="language" value="german">
+            </div>
+        </div>
+
+        <button id="next-to-level">Tālāk</button>
+    </div>
+
+<!-- Контейнер для выбора уровня -->
+<div class="container" id="level-selection" style="display: none;">
+    <h2>Izvēlieties valodas līmeni</h2>
+
+    <div class="options">
+        <div class="option" data-value="A1">
+            <span class="level">A1</span>
+            <span>iesācējs</span>
+            <input type="radio" name="level" value="A1">
+        </div>
+        <div class="option" data-value="A2">
+            <span class="level">A2</span>
+            <span>elementāri</span>
+            <input type="radio" name="level" value="A2">
+        </div>
+        <div class="option" data-value="B1">
+            <span class="level">B1</span>
+            <span>vidēja līmeņa</span>
+            <input type="radio" name="level" value="B1">
+        </div>
+        <div class="option" data-value="B2">
+            <span class="level">B2</span>
+            <span>augšējais-vidējais</span>
+            <input type="radio" name="level" value="B2">
+        </div>
+    </div>
+
+    <button id="start-lessons">Sākt nodarbības</button>
+</div>
+
+    <!-- Подключаем скрипты -->
+    <script src="../hearai-app/js/registration.js"></script>
+    <script src="../hearai-app/js/languageSelection.js"></script>
+</body>
+</html>

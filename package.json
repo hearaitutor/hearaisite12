@@ -1,0 +1,44 @@
+{
+  "name": "hearai-app",
+  "version": "1.0.0",
+  "description": "Language learning app",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "dev": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "package": "electron-builder",
+    "dist": "electron-builder"
+  },
+  "build": {
+    "appId": "com.hearai.app",
+    "productName": "HearAI",
+    "files": [
+      "index.html",
+      "main.js",
+      "html/**/*",
+      "js/**/*",
+      "css/**/*",
+      "package.json",
+      "node_modules/**/*",
+      "dist/**/*",
+      "assets/**/*"
+    ],
+    "directories": {
+      "output": "dist"
+    },
+    "win": {
+      "sign": false
+    }
+  },
+  "keywords": [
+    "hearai"
+  ],
+  "author": "qhusoh",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^34.1.1",
+    "electron-builder": "^25.1.8",
+    "live-server": "^1.2.2"
+  }
+}
